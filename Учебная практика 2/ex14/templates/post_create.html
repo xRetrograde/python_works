@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Создание поста</title>
+</head>
+<body>
+    <h1>Создание поста</h1>
+    <form action="/post/create" method="post">
+        <label for="title">Заголовок</label>
+        <input type="text" name="title" id="title">
+        <br>
+        <label for="content">Содержание</label>
+        <textarea name="content" id="content" cols="30" rows="10"></textarea>
+        <br>
+        <button type="submit">Создать</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+</head>
+<body>
+    <h1>Главная страница</h1>
+    <a href="about.html">Обо мне</a>
+    <a href="contact.html">Контакты</a>
+    <a href="feedback.html">Обратная связь</a>
+
+    <h2>Список статей</h2>
+    {{ for post in posts }}
+        <h3>{{ post.title }}</h3>
+        <a href="/post/{{ post.id }}">Читать пост</a>
+        <br>
+    {{ endfor }}
+</body>
+</html>
